@@ -19,7 +19,7 @@ squares.forEach((square) => {
 
 const button = document.querySelector('button');
 button.addEventListener('click', () => {
-    let sizeString = prompt("Enter a number to resize the grid");
+    let sizeString = prompt("Enter a Size");
     size = parseInt(sizeString);
     makeGrid(size);
 })

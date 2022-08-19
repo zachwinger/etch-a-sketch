@@ -1,5 +1,40 @@
+body{
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parentContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.etch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(232, 92, 92);
+    width: 700px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+h1{
+    color: #FFED66;
+    font-weight: 700;
+}
+
+.controls{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 #container{
     display: grid;
+    background-color: lightgray;
 }
 
 .content{
@@ -9,3 +44,6 @@
 .shading{
     background-color: gray;
 }
+
+
+

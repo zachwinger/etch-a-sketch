@@ -17,12 +17,19 @@ squares.forEach((square) => {
     });
 });
 
-const button = document.querySelector('button');
-button.addEventListener('click', () => {
+const resizeGrid = document.querySelector('#resizeGrid');
+resizeGrid.addEventListener('click', () => {
     let sizeString = prompt("Enter a number to resize the grid");
     size = parseInt(sizeString);
     makeGrid(size);
 })
+
+const erase = document.querySelector('#erase');
+erase.addEventListener('click', () => {
+    squares.forEach((square) => {
+        square.classList.remove('shading');
+    });
+});
 
 function makeGrid(size) {
     let width = 500 / size;
@@ -44,6 +51,13 @@ function makeGrid(size) {
     squares.forEach((square) => {
         square.addEventListener('mouseenter', () => {
             square.classList.add('shading');
+        });
+    });
+
+    const erase = document.querySelector('#erase');
+    erase.addEventListener('click', () => {
+        squares.forEach((square) => {
+            square.classList.remove('shading');
         });
     });
 }
